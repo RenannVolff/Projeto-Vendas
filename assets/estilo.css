@@ -16,26 +16,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 #area-principal-c{
     /* width: 920px; */
     margin: 0 auto;
     padding: 15px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 .meu-carrinho-c{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
+.imagem-vendas-c{
+    width: 25px;
+    height: 25px;
+    fill: currentColor;
+}
 .imagem-produto-c{
     border-radius: 6px;
+    width: 135px;
 }
 .campo-quantidade-c{
     display: flex;
@@ -214,7 +220,7 @@ body {
 .texto-valor-final-c{
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    /* width: 300px; */
 }
 .campo-botao-final-c{
     width: 100%;
@@ -281,4 +287,47 @@ h3{
     margin-bottom: 10px;
     border-bottom: 1px solid #f4f4f4;
     display: block;
+}
+
+@media screen and (max-width: 1850px){
+    body {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1322px){
+    body {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1120px){
+    body {
+        font-size: 14px;
+        width: 100%;
+    }
+    .pagamento-c{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 855px){
+    .produto-carrinho-c{
+        flex-direction: column;
+        height: 300px;
+    }
+    .classe-terceiracoluna-c{
+        align-items: center;
+    }
+    .segunda-div-c{
+        justify-content: center;
+    }
+    .classe-primeiracoluna-c{
+        width: 100%;
+    }
+    .formas-pagamento-c{
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-produtos-c{
+        display: none;
+    }
 }
